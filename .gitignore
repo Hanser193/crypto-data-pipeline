@@ -1,0 +1,9 @@
+# Caché de Python
+__pycache__/
+
+# No subir los datos locales (ya están en la nube)
+data/
+
+# Credenciales o entornos virtuales (por si los creas después)
+venv/
+.env
