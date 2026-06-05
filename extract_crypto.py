@@ -42,8 +42,9 @@ def get_crypto_data():
             fecha_hoy = datetime.now().strftime("%Y-%m-%d")
             hora_minuto = datetime.now().strftime("%H%M")
         
-            ruta_carpeta = f"data/raw/{fecha_hoy}"
-            os.makedirs(ruta_carpeta, exist_ok=True)
+            #ruta_carpeta = f"data/raw/{fecha_hoy}"
+            ruta_carpeta = "/tmp"
+            #os.makedirs(ruta_carpeta, exist_ok=True)
             texto = (f"crypto_prices_{hora_minuto}.parquet")
             ruta_final = os.path.join(ruta_carpeta, texto)
             df.to_parquet(ruta_final, engine='pyarrow')

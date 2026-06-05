@@ -2,7 +2,7 @@ import extract_crypto
 import load_to_gcp
 import os  # <-- Importamos os para manejar la ruta
 
-def ejecutar_pipeline():
+def ejecutar_pipeline(request):
     print("Iniciando Pipeline...")
     
     # 1. Extraer
@@ -21,7 +21,8 @@ def ejecutar_pipeline():
         # 3. Cargar a GCP
         load_to_gcp.subir_a_data_lake(direccion_en_mi_pc, direccion_en_la_nube)
         
-        print("✅ Pipeline finalizado con éxito!")
-
+        #print("✅ Pipeline finalizado con éxito!")
+        return "Datos de Criptomonedas extraídos y cargados con éxito!"
+    
 if __name__ == "__main__":
     ejecutar_pipeline()
