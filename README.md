@@ -56,7 +56,7 @@ Si deseas ejecutar la etapa de ingesta localmente antes de desplegarla en Cloud 
 3. Instala las dependencias:
     ```bash
     pip install -r requirements.txt
-    ```b
+    ```
 5. Ejecuta el pipeline principal:
     ```bash
     python main.py
