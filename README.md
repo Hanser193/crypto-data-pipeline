@@ -57,8 +57,3 @@ Si deseas ejecutar la etapa de ingesta localmente antes de desplegarla en Cloud 
     python main.py
 
 Desarrollado por Brayan Smith Hanser - Data Engineer
-
-   * `git add .`
-   * `git commit -m "Actualización del README con arquitectura, evidencias de GCS y BigQuery"`
-   * `git push`
-
