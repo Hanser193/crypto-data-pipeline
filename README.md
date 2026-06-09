@@ -44,13 +44,16 @@ Aquí se evidencia el resultado final tras el procesamiento distribuido con Apac
 
 Si deseas ejecutar la etapa de ingesta localmente antes de desplegarla en Cloud Functions:
 1. Clona este repositorio:
+   
    git clone https://github.com/Hanser193/crypto-data-pipeline.git
    cd crypto-data-pipeline
 
 3. Instala las dependencias:
+   
 pip install -r requirements.txt
 
-4. Ejecuta el pipeline principal:
+5. Ejecuta el pipeline principal:
+   
 python main.py
 
 Desarrollado por Brayan Smith Hanser - Data Engineer
