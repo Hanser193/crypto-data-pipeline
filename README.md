@@ -1,4 +1,12 @@
 ## Diagrama de Arquitectura 
+```  mermaid
+graph TD
+    A[🌐 API CoinGecko] -->|Script en Python| B(⚡ Cloud Functions + Scheduler)
+    B -->|Guarda particiones Parquet| C[(🪣 Cloud Storage - Capa Raw)]
+    C -->|Lee miles de archivos| D[☄️ Apache Spark - Procesamiento]
+    D -->|Agrupa y Limpia| E[(📊 BigQuery - Capa Gold)]
+    E -->|Analítica de Negocio| F[📈 Power BI / Analistas]
+```
 <img width="174" height="725" alt="image" src="https://github.com/user-attachments/assets/10a51566-ede4-46b3-a448-d68f55e8d8c6" />
 
 ## Bucket
