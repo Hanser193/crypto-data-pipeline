@@ -23,6 +23,7 @@ Procesamiento Distribuido: Para procesar el historial acumulado y evitar cuellos
 Data Warehouse (Capa Oro): El DataFrame final procesado se inyecta directamente en Google BigQuery, listo para ser consumido por analistas de negocio en herramientas de BI.
 
 🛠️ Stack Tecnológico
+
 Lenguaje: Python 3.11 (Pandas, PyArrow, Requests)
 Big Data Engine: Apache Spark (PySpark)
 Cloud Provider (GCP):
@@ -32,6 +33,7 @@ Data Warehouse: BigQuery
 Entorno de Procesamiento: Google Colab / Databricks
 
 📸 Evidencia de Ejecución en la Nube
+
 Para validar la correcta ejecución y automatización del pipeline, aquí presento la evidencia de los datos aterrizando en las distintas capas de Google Cloud Platform:
 1. Data Lake (Google Cloud Storage)
 Aquí se observa cómo el Cloud Scheduler ejecuta la función Serverless cada hora, depositando los archivos Parquet de forma automatizada.
