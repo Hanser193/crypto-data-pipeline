@@ -41,21 +41,24 @@ Aquí se evidencia el resultado final tras el procesamiento distribuido con Apac
 <img width="992" height="356" alt="image" src="https://github.com/user-attachments/assets/40c2ef7f-45a5-4d1f-9dae-b41292b55e57" />
 
 🚀 Cómo replicar este proyecto
+
 Si deseas ejecutar la etapa de ingesta localmente antes de desplegarla en Cloud Functions:
-Clona este repositorio:
+1. Clona este repositorio:
 code
 Bash
 git clone https://github.com/Hanser193/crypto-data-pipeline.git
 cd crypto-data-pipeline
 
-Instala las dependencias:
+2. Instala las dependencias:
 code
 Bash
 pip install -r requirements.txt
-Ejecuta el pipeline principal:
+
+3. Ejecuta el pipeline principal:
 code
 Bash
 python main.py
+
 Desarrollado por Brayan Smith Hanser - Data Engineer
 
    * `git add .`
