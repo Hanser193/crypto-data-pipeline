@@ -15,6 +15,7 @@ graph TD
     E -->|Analítica de Negocio| F[📈 Power BI / Analistas]
 ```
 ⚙️ Flujo de Datos (Paso a Paso)
+
 Extracción (Ingesta): Un script modular en Python consume la API pública de CoinGecko para obtener el precio y volumen del Bitcoin, Ethereum y Solana en tiempo real.
 Orquestación Autónoma: El código está desplegado en Google Cloud Functions y orquestado mediante Cloud Scheduler para ejecutarse automáticamente cada hora, las 24 horas del día (Micro-batching).
 Data Lake (Capa Bronce): Los datos en bruto aterrizan en un bucket de Google Cloud Storage en formato columnar óptimo (.parquet), particionados automáticamente por fecha y hora.
