@@ -14,7 +14,7 @@ graph TD
     D -->|Agrupa y Limpia| E[(📊 BigQuery - Capa Gold)]
     E -->|Analítica de Negocio| F[📈 Power BI / Analistas]
 ```
-⚙️ Flujo de Datos (Paso a Paso)
+## ⚙️ Flujo de Datos (Paso a Paso)
 
 Extracción (Ingesta): Un script modular en Python consume la API pública de CoinGecko para obtener el precio y volumen del Bitcoin, Ethereum y Solana en tiempo real.
 Orquestación Autónoma: El código está desplegado en Google Cloud Functions y orquestado mediante Cloud Scheduler para ejecutarse automáticamente cada hora, las 24 horas del día (Micro-batching).
@@ -22,7 +22,7 @@ Data Lake (Capa Bronce): Los datos en bruto aterrizan en un bucket de Google Clo
 Procesamiento Distribuido: Para procesar el historial acumulado y evitar cuellos de botella por múltiples archivos pequeños, se utiliza Apache Spark (PySpark), agrupando la información y calculando promedios y máximos históricos.
 Data Warehouse (Capa Oro): El DataFrame final procesado se inyecta directamente en Google BigQuery, listo para ser consumido por analistas de negocio en herramientas de BI.
 
-🛠️ Stack Tecnológico
+## 🛠️ Stack Tecnológico
 
 Lenguaje: Python 3.11 (Pandas, PyArrow, Requests)
 Big Data Engine: Apache Spark (PySpark)
@@ -32,7 +32,7 @@ Storage: Cloud Storage (GCS)
 Data Warehouse: BigQuery
 Entorno de Procesamiento: Google Colab / Databricks
 
-📸 Evidencia de Ejecución en la Nube
+## 📸 Evidencia de Ejecución en la Nube
 
 Para validar la correcta ejecución y automatización del pipeline, aquí presento la evidencia de los datos aterrizando en las distintas capas de Google Cloud Platform:
 1. Data Lake (Google Cloud Storage)
@@ -45,7 +45,7 @@ Para validar la correcta ejecución y automatización del pipeline, aquí presen
     Aquí se evidencia el resultado final tras el procesamiento distribuido con Apache Spark. Los datos limpios, agregados y transformados aterrizan en la tabla analítica final.
     <img width="992" height="356" alt="image" src="https://github.com/user-attachments/assets/40c2ef7f-45a5-4d1f-9dae-b41292b55e57" />
 
-🚀 Cómo replicar este proyecto
+## 🚀 Cómo replicar este proyecto
 
 Si deseas ejecutar la etapa de ingesta localmente antes de desplegarla en Cloud Functions:
 1. Clona este repositorio:
