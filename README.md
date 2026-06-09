@@ -36,9 +36,8 @@ Entorno de Procesamiento: Google Colab / Databricks
 
 Para validar la correcta ejecución y automatización del pipeline, aquí presento la evidencia de los datos aterrizando en las distintas capas de Google Cloud Platform:
 1. Data Lake (Google Cloud Storage)
-
-Aquí se observa cómo el Cloud Scheduler ejecuta la función Serverless cada hora, depositando los archivos Parquet de forma automatizada.
-<img width="1318" height="660" alt="image" src="https://github.com/user-attachments/assets/a3631829-6948-4188-8d26-9118cd59b8a0" />
+    Aquí se observa cómo el Cloud Scheduler ejecuta la función Serverless cada hora, depositando los archivos Parquet de forma automatizada.
+    <img width="1318" height="660" alt="image" src="https://github.com/user-attachments/assets/a3631829-6948-4188-8d26-9118cd59b8a0" />
 
 3. Data Warehouse (Google BigQuery)
 
