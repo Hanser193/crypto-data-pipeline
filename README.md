@@ -46,15 +46,17 @@ Si deseas ejecutar la etapa de ingesta localmente antes de desplegarla en Cloud 
 1. Clona este repositorio:
 code
 Bash
+
 git clone https://github.com/Hanser193/crypto-data-pipeline.git
+
 cd crypto-data-pipeline
 
-2. Instala las dependencias:
+3. Instala las dependencias:
 code
 Bash
 pip install -r requirements.txt
 
-3. Ejecuta el pipeline principal:
+4. Ejecuta el pipeline principal:
 code
 Bash
 python main.py
